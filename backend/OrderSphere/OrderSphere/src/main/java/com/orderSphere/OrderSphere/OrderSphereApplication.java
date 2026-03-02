@@ -1,0 +1,13 @@
+package com.orderSphere.OrderSphere;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class OrderSphereApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(OrderSphereApplication.class, args);
+	}
+
+}
