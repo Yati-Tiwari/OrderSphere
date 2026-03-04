@@ -7,6 +7,7 @@ import Cart from './component/Cart/Cart';
 // import MultipleItemCarousel from './component/Home/MultipleItemCarousel';
 // import RestaurantCard from './component/Home/RestaurantCard';
 import RestaurantDetails from './component/Restaurant/RestaurantDetails';
+import Profile from './component/Profile/Profile';
 
 function App(){
     return(
@@ -16,7 +17,9 @@ function App(){
             {/* <Home/>
             <RestaurantCard/> */}
             {/* <RestaurantDetails/> */}
-            <Cart/>
+            {/* <Cart/> */}
+            <Profile/>
+
         </ThemeProvider>
     );
 }
