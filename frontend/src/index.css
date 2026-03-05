@@ -12,6 +12,9 @@ code {
     monospace;
 }
 
+/* stylelint-disable-next-line */
 @tailwind base;
+/* stylelint-disable-next-line */
 @tailwind components;
+/* stylelint-disable-next-line */
 @tailwind utilities;
