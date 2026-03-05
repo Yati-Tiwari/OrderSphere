@@ -31,11 +31,16 @@ export const ProfileNavigation=({open,handleClose})=>{
             onClose={handleClose}
             open={isSmallScreen ? open:true} 
             anchor='left'
-            sx={{zIndex:1}}>
-                <div className="w-[50vw] lg:w-[20vw] h-[100vh] flex flex-col 
-                justify-center textxl gap-8">
+            sx={{
+                zIndex:0,
+                '& .MuiDrawer-paper': {
+                    top: isSmallScreen ? 0 : '64px',
+                    height: isSmallScreen ? 'auto' : 'calc(100% - 64px)'
+                }
+            }}>
+                <div className="w-[50vw] lg:w-56 h-full flex flex-col justify-start pt-16 text-xl gap-8 bg-black text-white">
                     {menu.map((item,i)=><>
-                    <div className="px-5 flex items-center space-x-5 cursour-pointer">
+                    <div className="px-5 flex items-center space-x-5 cursor-pointer">
                         {item.icon}
                         <span>{item.title}</span>
                     

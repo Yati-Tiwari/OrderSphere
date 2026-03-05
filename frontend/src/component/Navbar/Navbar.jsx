@@ -1,27 +1,24 @@
-import { Avatar, Badge, IconButton } from '@mui/material'
+import { Avatar, Badge, Box, IconButton } from '@mui/material'
 import React from 'react'
 import SearchIcon from '@mui/icons-material/Search';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 
 export const Navbar = () => {
     return (
-        <div className='w-full flex items-center justify-between px-5 py-[.8rem] bg-[#e91e63] lg:px-20 shadow-md z-50'>
+        <Box
+         className='fixed top-0 left-0 right-0 w-full px-5 py-[.8rem] bg-[#e91e63] z-50 lg:px-20 flex justify-between items-center'>
 
-            <div className='flex-1'></div>
-
-            <div className='cursor-pointer flex items-center space-x-4'>
-                <li className='logo font-semibold text-white text-2xl lg:text-3xl'>
-                    Sphere Food
-                </li>
+            <div className='flex items-center'>
+                <h1 className='font-bold text-white text-xl'>Zosh food</h1>
             </div>
 
-            <div className='flex-1 flex items-center justify-end space-x-4 lg:space-x-8'>
+            <div className='flex items-center justify-end space-x-4 lg:space-x-8'>
 
                 <IconButton>
                     <SearchIcon sx={{ fontSize: "1.5rem", color: "white" }} />
                 </IconButton>
 
-                <Avatar sx={{ bgcolor: "white", color: "#e91e63" }}>
+                <Avatar sx={{ bgcolor: "white", color: "#e91e63", width: 32, height: 32, fontSize: "0.9rem", fontWeight: "bold" }}>
                     C
                 </Avatar>
 
@@ -33,6 +30,6 @@ export const Navbar = () => {
 
             </div>
 
-        </div>
+        </Box>
     )
 }
