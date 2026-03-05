@@ -4,9 +4,9 @@ import { CssBaseline, ThemeProvider } from '@mui/material';
 import { darkTheme } from './Theme/DarkTheme';
 import Cart from './component/Cart/Cart';
 import { CustomerRoute } from './Routers/CustomerRoute';
-// import Home from './component/Home/Home';
+import Home from './component/Home/Home';
 // import MultipleItemCarousel from './component/Home/MultipleItemCarousel';
-// import RestaurantCard from './component/Home/RestaurantCard';
+import RestaurantCard from './component/Home/RestaurantCard';
 import RestaurantDetails from './component/Restaurant/RestaurantDetails';
 import Profile from './component/Profile/Profile';
 
@@ -14,13 +14,13 @@ function App(){
     return(
         <ThemeProvider theme={darkTheme}>
             <CssBaseline/>
-            {/* <Navbar/> */}
-            {/* <Home/>
-            <RestaurantCard/> */}
-            {/* <RestaurantDetails/> */}
+             <Navbar/>
+             <Home/>
+            <RestaurantCard/> 
+            <RestaurantDetails/>
             {/* <Cart/> */}
             {/* <Profile/> */}
-            <CustomerRoute/>
+            {/* <CustomerRoute/> */}
 
         </ThemeProvider>
     );

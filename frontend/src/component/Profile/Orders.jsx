@@ -1,6 +1,5 @@
 import React from 'react'
-
-export const Orders=()=>{
+ const Orders=()=>{
     return(
         <div className='flex-items-center flex-col'>
             <h1 className='text-xl text-center py-7 font-semibold'>My Orders</h1>
@@ -11,3 +10,5 @@ export const Orders=()=>{
         </div>
     )
 }
+
+export default Orders;
