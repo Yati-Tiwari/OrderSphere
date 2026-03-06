@@ -9,11 +9,7 @@ export const Navbar = () => {
          className='fixed top-0 left-0 right-0 w-full px-5 py-[.8rem] bg-[#e91e63] z-50 lg:px-20 flex justify-between items-center'>
 
             <div className='flex items-center'>
-<<<<<<< HEAD
                 <h1 className='font-bold text-white text-xl'>Sphere Food</h1>
-=======
-                <h1 className='font-bold text-white text-xl'>Order Sphere</h1>
->>>>>>> d81b99eea0588b90de11ed305fa12f501b53a1c7
             </div>
 
             <div className='flex items-center justify-end space-x-4 lg:space-x-8'>
