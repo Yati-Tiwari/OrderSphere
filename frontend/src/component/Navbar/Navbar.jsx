@@ -9,7 +9,7 @@ export const Navbar = () => {
          className='fixed top-0 left-0 right-0 w-full px-5 py-[.8rem] bg-[#e91e63] z-50 lg:px-20 flex justify-between items-center'>
 
             <div className='flex items-center'>
-                <h1 className='font-bold text-white text-xl'>Zosh food</h1>
+                <h1 className='font-bold text-white text-xl'>Sphere Food</h1>
             </div>
 
             <div className='flex items-center justify-end space-x-4 lg:space-x-8'>
