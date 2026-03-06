@@ -22,12 +22,12 @@ export const EventCard = () => {
             </div>
         </CardContent>
 
-        {false && <CardActions>
+        { false && (<CardActions>
             <IconButton>
                 <DeleteIcon/>
             </IconButton>
 
-        </CardActions>}
+        </CardActions>)}
       </Card>
     </div>
   )
