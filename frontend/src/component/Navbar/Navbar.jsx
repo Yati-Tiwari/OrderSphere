@@ -19,7 +19,7 @@ export const Navbar = () => {
                 </IconButton>
 
                 <Avatar sx={{ bgcolor: "white", color: "#e91e63", width: 32, height: 32, fontSize: "0.9rem", fontWeight: "bold" }}>
-                    N
+                    C
                 </Avatar>
 
                 <IconButton>
