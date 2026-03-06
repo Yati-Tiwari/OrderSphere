@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import { ProfileNavigation } from './ProfileNavigation'
 import { Routes, Route } from 'react-router-dom';
 import UserProfile from './UserProfile';
-import Orders from './Orders';
+import {Orders} from './Orders';
 import Address from './Address';
 import Favourites from './Favourites';
 import Events from './Events';
