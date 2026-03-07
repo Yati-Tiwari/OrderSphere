@@ -10,13 +10,13 @@ const UserProfile=()=>{
         <div className='min-h-[80vh] flex flex-col justify-center items-center text-center'>
             <div className='flex flex-col items-center justify-center'>
                 <AccountCircleIcon sx={{fontSize:"9rem"}}/>
-<<<<<<< HEAD
+
                 <h1 className='py-5 text-2xl font-semibold'>Code with Sphere</h1>
                 <p>Email:codewithsphere@gmail.com</p>
-=======
+
                 <h1 className='py-5 text-2xl font-semibold'>OrderSphere</h1>
                 <p>Email:ordersphere@gmail.com</p>
->>>>>>> d81b99eea0588b90de11ed305fa12f501b53a1c7
+
                 <Button variant='contained' onClick={handleLogOut} sx={{margin:"2rem 0rem"}}>LogOut</Button>
 
             </div>
