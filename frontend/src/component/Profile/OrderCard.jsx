@@ -13,6 +13,8 @@ export const OrderCard = () => {
       </div>
       </div>
       <div>
+        {/* Status button showing order completion */}
+
         <Button className='cursor-not-allowed'>completed</Button>
       </div>
 
