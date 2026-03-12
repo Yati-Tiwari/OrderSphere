@@ -41,9 +41,11 @@ Built using **React.js, Spring Boot, and PostgreSQL**, the system follows a secu
 5. JSON response is returned to the frontend  
 
 This ensures:
-- Secure authentication  
-- Efficient order processing  
-- Clean separation of concerns  
+- Secure authentication and protected API access
+- Efficient order processing and management
+- Clean separation between frontend and backend layers
+- Scalable and maintainable system architecture
+- Reliable data storage and retrieval using PostgreSQL
 
 ---
 
