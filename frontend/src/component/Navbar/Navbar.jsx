@@ -1,8 +1,14 @@
+// Importing required components from Material UI library
+// Avatar -> used to display user profile picture
+// Badge -> used to show notification or item count
+// Box -> used for layout and styling
+// IconButton -> used to create clickable icon buttons
 import { Avatar, Badge, Box, IconButton } from '@mui/material'
+
 import React from 'react'
 import SearchIcon from '@mui/icons-material/Search';
-import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 export const Navbar = () => {
     return (
         <Box

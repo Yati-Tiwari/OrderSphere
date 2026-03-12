@@ -39,7 +39,7 @@ export const ProfileNavigation=({open,handleClose})=>{
             anchor='left'
             sx={{
                 zIndex:0,
-                '& .MuiDrawer-paper': {
+                '&.MuiDrawer-paper': {
                     top: isSmallScreen ? 0 : '64px',
                     height: isSmallScreen ? 'auto' : 'calc(100% - 64px)'
                 }
