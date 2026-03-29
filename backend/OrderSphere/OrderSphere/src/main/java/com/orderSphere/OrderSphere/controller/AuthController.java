@@ -1,5 +1,5 @@
 package com.orderSphere.OrderSphere.controller;
-
+import java.util.Collection;
 
 import com.orderSphere.OrderSphere.Response.AuthResponse;
 import com.orderSphere.OrderSphere.config.JwtProvider;
@@ -90,7 +90,7 @@ public class AuthController {
         String jwt=jwtProvider.generateToken(authentication);
         AuthResponse authResponse=new AuthResponse();
         authResponse.setJwt(jwt);
-        authResponse.setMessage("Registered Successfully");
+        authResponse.setMessage("Login Successfully");
         authResponse.setRole(USER_ROLE.valueOf(role));
 
         return new ResponseEntity<>(authResponse,HttpStatus.OK);
