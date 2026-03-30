@@ -18,7 +18,7 @@ export const CustomerRoute=()=>{
                 <Route path='/my-profile/*' element={<Profile/>}></Route>
 
             </Routes>
-            
+            <Auth/>
         </div>
     )
 }
