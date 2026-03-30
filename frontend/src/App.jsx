@@ -9,6 +9,7 @@ import { CustomerRoute } from './Routers/CustomerRoute';
 // import RestaurantCard from './component/Home/RestaurantCard';
 import RestaurantDetails from './component/Restaurant/RestaurantDetails';
 import Profile from './component/Profile/Profile';
+import { BrowserRouter } from 'react-router-dom';
 
 function App(){
     return(
@@ -20,6 +21,7 @@ function App(){
             {/* <RestaurantDetails/> */}
             {/* <Cart/> */}
             {/* <Profile/> */}
+
             <CustomerRoute/>
 
         </ThemeProvider>

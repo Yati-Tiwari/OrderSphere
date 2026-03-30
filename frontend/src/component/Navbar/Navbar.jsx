@@ -1,24 +1,20 @@
-// Importing required components from Material UI library
-// Avatar -> used to display user profile picture
-// Badge -> used to show notification or item count
-// Box -> used for layout and styling
-// IconButton -> used to create clickable icon buttons
 import { Avatar, Badge, Box, IconButton } from '@mui/material'
-
 import React from 'react'
 import SearchIcon from '@mui/icons-material/Search';
-
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
-import { Navigate, useNavigate } from 'react-router-dom';
+import PersonIcon from '@mui/icons-material/Person';
+import { useNavigate } from 'react-router-dom';
 
 export const Navbar = () => {
-    const navigate=useNavigate()
+    const navigate = useNavigate()
+
     return (
         <Box
-         className='fixed top-0 left-0 right-0 w-full px-5 py-[.8rem] bg-[#e91e63] z-50 lg:px-20 flex justify-between items-center'>
+            className='fixed top-0 left-0 right-0 w-full px-5 py-[.8rem] bg-[#e91e63] z-50 lg:px-20 flex justify-between items-center'
+        >
 
             <div className='flex items-center'>
-                <h1 className='font-bold text-white text-xl'>Sphere Food</h1>
+                <h1 className='font-bold text-white text-xl'>Order Sphere</h1>
             </div>
 
             <div className='flex items-center justify-end space-x-4 lg:space-x-8'>
@@ -27,13 +23,22 @@ export const Navbar = () => {
                     <SearchIcon sx={{ fontSize: "1.5rem", color: "white" }} />
                 </IconButton>
 
-                {false?<Avatar sx={{ bgcolor: "white", color: "#e91e63", width: 32, height: 32, fontSize: "0.9rem", fontWeight: "bold" }}>
-                    C
-                </Avatar>:
-                <IconButton onClick={()=>Navigate("/account/login")}>
-                    <person/>
-                </IconButton>}
-
+                {false ? (
+                    <Avatar sx={{
+                        bgcolor: "white",
+                        color: "#e91e63",
+                        width: 32,
+                        height: 32,
+                        fontSize: "0.9rem",
+                        fontWeight: "bold"
+                    }}>
+                        C
+                    </Avatar>
+                ) : (
+                    <IconButton onClick={() => navigate("/account/login")}>
+                        <PersonIcon sx={{ color: "white" }} />
+                    </IconButton>
+                )}
 
                 <IconButton>
                     <Badge badgeContent={4} color="error">
